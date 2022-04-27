@@ -1,5 +1,8 @@
 
 
+
+
+function prueba() {
 let Numero = Number(prompt("Elegí un Número"))
 if (!Number.isNaN(Numero) && Numero != "") {
     alert("Bien")
@@ -14,6 +17,4 @@ if (!Number.isNaN(Numero) && Numero != "") {
         document.write("CANCELAAAAAAAADO")
     }
 }
-
-
-
+}
