@@ -1,6 +1,5 @@
 
 
-
 let Numero = Number(prompt("Elegí un Número"))
 if (!Number.isNaN(Numero) & Numero) {
     alert("Bien")
@@ -12,8 +11,8 @@ if (!Number.isNaN(Numero) & Numero) {
         alert("Ta, te perdono")
     } else {
         alert("Cancelado")
-        self.close()
+        
+        document.write("CANCELAAAAAAAADO")
     }
 }
-
 
