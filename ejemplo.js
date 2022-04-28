@@ -25,6 +25,5 @@ if (!Number.isNaN(Numero) && Numero != "") {
     coso = coso + 1
     document.getElementById("variable").innerHTML = coso
     document.getElementById("comentario").innerHTML = "qué irresponsable"
-    document.getElementById("variable").contentWindow.location.reload(true);
-    document.getElementById("comentario").contentWindow.location.reload(true);
+
 }
