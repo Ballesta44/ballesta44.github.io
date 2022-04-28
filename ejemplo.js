@@ -30,14 +30,14 @@ function contador() {
 
 
 function color(){
-    
+    let color = ""
     rand1 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
     rand2 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
     rand3 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
     concatenado = rand1.toString() + rand2.toString() +rand3.toString()
-    colores = "#" + concatenado
-    document.body.style.background = colores
-    /*document.getElementById("body").style="background-color:"+color*/
+    color = "#" + concatenado
+    document.body.style.background = color
+    
     document.getElementById("canta").innerHTML = concatenado + " Cantas se balanceaban sobre la tela de una araña"
 
 };
