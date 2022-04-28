@@ -14,7 +14,7 @@ function prueba() {
         /*alert("Cancelado")
     document.write("CANCELAAAAAAAADO")*/
     alert("Ah si? Tomá")
-    window.location.href = "https://www.youtube.com/watch?v=xvFZjo5PgG0"}
+    window.location.href = "https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&autoplay=1"}
     }
 };
 
