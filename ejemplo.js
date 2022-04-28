@@ -2,7 +2,7 @@
 
 function prueba() {
 let numero = Number(prompt("Elegí un Número"))
-if (!Number.isNaN(Numero) && Numero != "") {
+if (!Number.isNaN(numero) && numero != "") {
     alert("Bien")
 } else {
     alert("Dale pelotudo")
