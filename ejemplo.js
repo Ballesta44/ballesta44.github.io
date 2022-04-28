@@ -35,8 +35,8 @@ function color(){
     rand2 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
     rand3 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
     concatenado = rand1.toString() + rand2.toString() +rand3.toString()
-    color = "#" + concatenado
-    document.body.style.background = color
+    colores = "#" + concatenado
+    document.body.style.background = colores
     /*document.getElementById("body").style="background-color:"+color*/
     document.getElementById("canta").innerHTML = concatenado + " Cantas se balanceaban sobre la tela de una araña"
 
