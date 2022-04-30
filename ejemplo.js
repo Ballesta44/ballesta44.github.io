@@ -30,15 +30,39 @@ function contador() {
 
 
 function color(){
-    let color = ""
-    rand1 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
-    rand2 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
-    rand3 = Math.floor(Math.random() * ((99- 10) + 1)) + 10
-    concatenado = rand1.toString() + rand2.toString() +rand3.toString()
-    color = "#" + concatenado
-    document.body.style.background = color
+    concatenado = 
+    (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() + 
+    (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() +
+    (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString()
+    document.body.style.background = "#" + concatenado ;
+    document.getElementById('canta').innerHTML = concatenado + ' Cantas se balanceaban sobre la tela de una araña' ;
+    coloreoBoton()
+}
+
+function coloreoBoton() {
+    document.getElementById('botonazo').style.background = "#" + (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() + (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() + (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() ;
+    document.getElementById('botonazo').style.borderColor = "#" + (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() + (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() + (Math.floor(Math.random() * ((99- 10) + 1)) + 10).toString() ;
+      
+}
+
+
+function posicion(){
+    const botonazo = document.getElementById('botonazo');
+    botonazo.style.position = 'absolute';
     
-    document.getElementById("canta").innerHTML = concatenado + " Cantas se balanceaban sobre la tela de una araña"
+    /*
+    botonazo.style.setProperty('top','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
+    botonazo.style.setProperty('bottom','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
+    botonazo.style.setProperty('left','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
+    botonazo.style.setProperty('right','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
+*/
+    botonazo.style.top = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
+    botonazo.style.bottom = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
+    botonazo.style.left = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
+    botonazo.style.right = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
+}
 
-};
-
+function gorra(){
+    alert("hijodeputa nometoques LA CONCHA DE TU MADRE POLICIAAAAA!!1!1")
+    window.location.href = "https://www.argentina.gob.ar/policia-federal-argentina"
+}
