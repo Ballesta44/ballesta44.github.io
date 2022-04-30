@@ -50,16 +50,16 @@ function posicion(){
     const botonazo = document.getElementById('botonazo');
     botonazo.style.position = 'absolute';
     
+    botonazo.style.setProperty('top','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
+    botonazo.style.setProperty('bottom','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
+    botonazo.style.setProperty('left','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
+    botonazo.style.setProperty('right','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
+    
     /*
-    botonazo.style.setProperty('top','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
-    botonazo.style.setProperty('bottom','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
-    botonazo.style.setProperty('left','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
-    botonazo.style.setProperty('right','calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'% - 100px)' );
-*/
     botonazo.style.top = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
     botonazo.style.bottom = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
     botonazo.style.left = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
-    botonazo.style.right = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
+    botonazo.style.right = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';*/
 }
 
 function gorra(){
