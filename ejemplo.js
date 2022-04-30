@@ -50,10 +50,11 @@ function posicion(){
     const botonazo = document.getElementById('botonazo');
     botonazo.style.position = 'absolute';
     
-    botonazo.style.setProperty('top','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
-    botonazo.style.setProperty('bottom','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
-    botonazo.style.setProperty('left','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
-    botonazo.style.setProperty('right','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 105px))');
+    /* Seteo la posición entre un minimo de 1% y un maximo de 100% - menos tamaño del circulo menos bordes * 2 */    
+    botonazo.style.setProperty('top','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 108px))');
+    botonazo.style.setProperty('bottom','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 108px))');
+    botonazo.style.setProperty('left','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 108px))');
+    botonazo.style.setProperty('right','clamp(1%,calc('+(Math.floor(Math.random() * ((100- 1) + 1)) + 1)+'%),calc(100% - 108px))');
     
     /*
     botonazo.style.top = (Math.floor(Math.random() * ((88- 1) + 1)) + 1)+'%';
