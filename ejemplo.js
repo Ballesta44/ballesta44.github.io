@@ -18,6 +18,7 @@ function prueba() {
     }
 };
 
+/*
 let coso = 0;
 function set(){
     document.getElementById("variable").innerHTML = coso
@@ -26,6 +27,17 @@ function contador() {
     coso = coso + 1
     document.getElementById("variable").innerHTML = coso
     document.getElementById("comentario").innerHTML = "qué irresponsable"
+};*/
+
+let coso = document.cookie.substring(9);
+function set(){
+    document.getElementById("variable").innerHTML = coso
+    }
+function contador() {
+    coso = coso + 1
+    document.getElementById("variable").innerHTML = coso
+    document.getElementById("comentario").innerHTML = "qué irresponsable"
+    document.cookie = "contador=" + coso
 };
 
 
