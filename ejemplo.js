@@ -29,7 +29,9 @@ function contador() {
     document.getElementById("comentario").innerHTML = "qué irresponsable"
 };*/
 
-let coso = document.cookie.substring(9);
+if (document.cookie.substring(9) = "") {
+    let coso = 0
+} else {let coso = document.cookie.substring(9)};
 function set(){
     document.getElementById("variable").innerHTML = coso
     }
