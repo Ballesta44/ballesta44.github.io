@@ -30,14 +30,14 @@ function contador() {
 };*/
 
 if (document.cookie.substring(9) == "") 
-    {coso = 0} else {coso = document.cookie.substring(9)};
+    {coso = 0} else {coso = Number(document.cookie.substring(9))};
 function set(){
     document.getElementById("variable").innerHTML = coso
     }
 function contador() {
     coso = coso + 1
     document.getElementById("variable").innerHTML = coso
-    document.getElementById("comentario").innerHTML = "qué irresponsable"
+    document.getElementById("comentario").innerHTML = "qué irresponsable. Nunca lo olvidare"
     document.cookie = "contador=" + coso
 };
 
